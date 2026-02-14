@@ -1,10 +1,10 @@
 <?php
 
-namespace DivineOmega\LaravelOmegaSearch\Traits;
+namespace JordJD\LaravelOmegaSearch\Traits;
 
-use DivineOmega\LaravelOmegaSearch\OmegaSearchJoin;
-use DivineOmega\OmegaSearch\OmegaSearch;
-use DivineOmega\OmegaSearch\SearchResults;
+use JordJD\LaravelOmegaSearch\OmegaSearchJoin;
+use JordJD\OmegaSearch\OmegaSearch;
+use JordJD\OmegaSearch\SearchResults;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;

@@ -3,12 +3,12 @@
   "description": "Easily add an intelligent search engine to your Laravel powered website or web application",
   "require": {
     "php": ">=7.1",
-    "divineomega/omega-search": "^4.1.0",
+    "jord-jd/omega-search": "^null.0",
     "laravel/framework": "^5.1||^6.0"
   },
   "autoload": {
     "psr-4": {
-      "DivineOmega\\LaravelOmegaSearch\\": "src/"
+      "JordJD\\LaravelOmegaSearch\\": "src/"
     }
   },
   "license": "LGPL-3.0-only",
@@ -17,7 +17,8 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "3.0-dev"
+      "dev-master": "4.0-dev"
     }
-  }
+  },
+  "require-dev": {}
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace DivineOmega\LaravelOmegaSearch;
+namespace JordJD\LaravelOmegaSearch;
 
 
 class OmegaSearchJoinCondition
