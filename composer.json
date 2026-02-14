@@ -1,15 +1,23 @@
 {
-    "name": "divineomega/laravel-omega-search",
-    "description": "Easily add an intelligent search engine to your Laravel powered website or web application",
-    "require": {
-        "php": ">=7.1",
-        "divineomega/omega-search": "^4.1.0",
-        "laravel/framework": "^5.1||^6.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "DivineOmega\\LaravelOmegaSearch\\": "src/"
-        }
-    },
-    "license": "LGPL-3.0-only"
+  "name": "jord-jd/laravel-omega-search",
+  "description": "Easily add an intelligent search engine to your Laravel powered website or web application",
+  "require": {
+    "php": ">=7.1",
+    "divineomega/omega-search": "^4.1.0",
+    "laravel/framework": "^5.1||^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "DivineOmega\\LaravelOmegaSearch\\": "src/"
+    }
+  },
+  "license": "LGPL-3.0-only",
+  "replace": {
+    "jord-jd/laravel-omega-search": "self.version"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.0-dev"
+    }
+  }
 }
