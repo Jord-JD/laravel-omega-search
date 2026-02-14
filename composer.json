@@ -3,7 +3,7 @@
   "description": "Easily add an intelligent search engine to your Laravel powered website or web application",
   "require": {
     "php": ">=7.1",
-    "jord-jd/omega-search": "^null.0",
+    "jord-jd/omega-search": "^5.0",
     "laravel/framework": "^5.1||^6.0"
   },
   "autoload": {
