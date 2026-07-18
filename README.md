@@ -5,6 +5,8 @@ It can be configured to search any of your Eloquent models.
 
 Under the hood, this uses the [Omega Search](https://github.com/Jord-JD/omega-search) package.
 
+Supports PHP 7.1 through current releases and Laravel 5.1 through 13. Result ordering uses a portable, parameter-bound SQL `CASE` expression instead of MySQL-only `FIELD()`, and a search with no matches now returns an empty query rather than every model.
+
 ## Installation
 
 You can install this package with Composer.
