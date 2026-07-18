@@ -93,9 +93,21 @@ trait OmegaSearchTrait
         /** @var Builder $query */
         $query = self::query();
 
+        $query->whereIn($keyName, $ids);
+
         if (count($ids) > 0) {
-            $query->whereIn($keyName, $ids)
-                ->orderByRaw(DB::raw('FIELD(' . $keyName . ', ' . implode(',', $ids) . ')'));
+            $caseParts = [];
+            $bindings = [];
+
+            foreach ($ids as $position => $id) {
+                $caseParts[] = 'WHEN ? THEN '.(int) $position;
+                $bindings[] = $id;
+            }
+
+            $query->orderByRaw(
+                'CASE '.$keyName.' '.implode(' ', $caseParts).' ELSE '.count($ids).' END',
+                $bindings
+            );
         }
 
         return $query;

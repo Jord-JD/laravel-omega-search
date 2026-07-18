@@ -3,8 +3,8 @@
   "description": "Easily add an intelligent search engine to your Laravel powered website or web application",
   "require": {
     "php": ">=7.1",
-    "jord-jd/omega-search": "^5.0",
-    "laravel/framework": "^5.1||^6.0"
+    "jord-jd/omega-search": "^5.1",
+    "laravel/framework": "^5.1 || ^6.0 || ^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0 || ^12.0 || ^13.0"
   },
   "autoload": {
     "psr-4": {
@@ -17,8 +17,10 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "4.0-dev"
+      "dev-master": "4.1-dev"
     }
   },
-  "require-dev": {}
+  "require-dev": {
+    "phpunit/phpunit": "^7.5 || ^9.6 || ^12.0"
+  }
 }
